@@ -11,8 +11,8 @@
 aside[class^="membersWrap"], 
 div[class^="sidebar"] {
     overflow: hidden;
-    flex-basis: 5px;
-    min-width: 0px;
+    flex-basis: 1%;
+    min-width: 7px;
     transition: flex-basis 0.3s ease-out;
 }
 
