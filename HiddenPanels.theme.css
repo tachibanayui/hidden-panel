@@ -1,0 +1,41 @@
+/**
+ * @name Hidden panels
+ * @author Sharp-urAPIse#8888
+ * @version 1.0.0
+ * @description Hide all panels (member list, channel list, server list,...) except the chat panel
+ * @authorId 343601966871609356
+ * @source https://github.com/tachibanayui/hidden-panel
+ * @website https://github.com/tachibanayui
+*/
+
+aside[class^="membersWrap"], 
+div[class^="sidebar"] {
+    overflow: hidden;
+    flex-basis: 5px;
+    min-width: 0px;
+    transition: flex-basis 0.3s ease-out;
+}
+
+aside[class^="membersWrap"]:hover, 
+div[class^="sidebar"]:hover{
+    flex-basis: 240px;
+}
+
+section[class^="title"] {
+    height: 5px !important;
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+}
+
+section[class^="title"]:hover {
+    height: 40px !important;
+}
+
+nav[aria-label="Servers sidebar"] {
+    width: 10px;
+    transition: width 0.3s ease-out;
+}
+
+nav[aria-label="Servers sidebar"]:hover {
+    width: 78px;
+}
